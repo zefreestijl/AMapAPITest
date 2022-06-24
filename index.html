@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+
+        <title>Amap Test1</title>
+        <link rel="stylesheet" type="text/css" href="./style1.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="https://greggman.github.io/webgl-helpers/webgl-force-preservedrawingbuffer.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Header & Note -->
+        <div id="controls1">
+            <select id="cities1">
+                <option value="29.042, 119.62">金华市</option>
+                <option value="32.0584, 118.7965">南京市</option>
+                <option value="31.2473, 121.412">上海市</option>
+            </select>
+
+            <a id="a5z" class="note" style="width: 30px; background-color: bisque; left: 140px;"> Zoom </a>
+            <a id="a5n" class="note" style="left: 200px ; font-size: 14px; "> Note </a>
+
+        </div> 
+        <a id="a5a" class="note" style="left: 10px; bottom: 50px; font-size: 12px;"> Latlng / pixel </a>
+        <a id="a5min" class="note" style="left: 150px; bottom: 50px; font-size: 12px;"> min </a>
+        <a id="a5max" class="note" style="left: 300px; bottom: 50px; font-size: 12px;"> max </a>
+
+
+        <!-- Capture Image -->
+        <input class="btn"  style="top: 35px;  width: 50px; " id="f2" value="img1" type="text"  > 
+        <button class="btn" style="background: #ecc6c6; width: 50px; left: 80px; top: 35px;"  id="button1a">Run</button>
+
+        <input class="btn" id="f1" style="top: 65px;  width: 50px; " type="number" min="13.0" max="19.0" value="16.0" step="0.1">  
+        <p class="btn" id="p1" style="left: 85px; top: 50px; font-size: 16px; " > km </p>
+
+
+        <button class="btn" style="top: 100px;"  id="button1p">Place Center</button>
+
+
+
+
+        <!-- Layer & Style -->
+        <button class="btn" style="top: 145px;"  id="button23d">2D -> 3D</button>
+
+        <button class="btn" style="top: 175px; background-color: bisque;" id="button1s">Switch MapStyle</button>
+        <label id="layer1" class="chk" style="top: 200px;  "> <input type="radio" name="chk1">1. Region</label>
+        <label id="layer2" class="chk" style="top: 220px;  "> <input type="radio" name="chk1">2. Street</label>
+        <label id="layer3" class="chk" style="top: 240px; "> <input type="radio" name="chk1">3. Building</label>
+        <label id="layer4" class="chk" style="top: 260px; "> <input type="radio" name="chk1">4. Satellite</label>
+        <label id="layer5" class="chk" style="top: 280px; "> <input type="radio" name="chk1">5. Traffice</label>
+
+
+        <button class="btn" style="top: 320px;" id="button3a">Admin Region</button>
+
+
+
+
+        <!-- Draw & Annotation -->
+        
+
+
+
+
+
+        <!-- Zoom -->
+        <button id="z0" style="right: 0px;" class="button2">0</button>
+        <button id="z1" style="right: 25px;" class="button2">+</button>
+        <button id="z2" style="right: 50px;" class="button2">-</button>
+
+        <div id="container1" > </div> 
+
+
+
+        <!-- AMap Scripts -->
+        <script defer type="text/javascript"> 
+            window._AMapSecurityConfig = { securityJsCode:'5266c7c8b041094cc3e674b29c8a4113'}  </script> 
+
+        <script defer type="text/javascript" 
+            src="https://webapi.amap.com/maps?v=2.0.5&key=da83628151d223de3b6b991871276622"> 
+        </script> 
+        
+        <script type="module" src="./m1_Map1.js"> </script> 
+        
+        <script type="module" src="./s00_Controls.js"> </script> 
+        <script type="module" src="./s00a_Zooms.js"> </script> 
+
+        <script type="module" src="./s01a_Admin3.js"> </script> 
+        <script type="module" src="./s01_SwitchLayers.js"> </script> 
+        <script type="module" src="./s01b_Switch23D.js"> </script> 
+
+
+        <script type="module" src="./s03_ExportImage.js"> </script> 
+        <script type="module" src="./s03a_AddMarker.js"> </script> 
+        <script type="module" src="./s03b_DrawRegion.js"> </script> 
+
+
+
+        <!-- GMap Scripts -->
+
+
+
+
+    </body>
+</html>
+
+

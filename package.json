@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "amap-js": "^2.4.0",
+    "html2canvas": "^1.4.1",
+    "vue-amap": "^0.5.10"
+  }
+}
