@@ -4,7 +4,8 @@ div#container1 { height: 95vh; width: auto; position: relative; margin: 0px; pad
 div#controls1 { width: 90vw; height: 25px; }
 #cities1 { width: 120px; font-size: 16px; text-align: center;}
 
-
+#panel1 { position: absolute; background-color: gainsboro; height: 300px; 
+    overflow-y: auto; bottom: 150px; width: 320px; left: -300px;}
 
 
 
