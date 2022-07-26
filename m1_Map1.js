@@ -6,7 +6,8 @@ var map1;
 var mpp = document.getElementById('container1');
 var c1 = document.getElementById('cities1');
 
-var lat0 = 29.042, lng0 = 119.62;
+var lat0 = Number(c1.value.split(',')[0].trim()); 
+var lng0 = Number(c1.value.split(',')[1].trim());
 
 //mpp.width = window.innerWidth
 
