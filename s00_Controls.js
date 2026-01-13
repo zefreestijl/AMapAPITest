@@ -2,8 +2,7 @@
 var mpp = document.getElementById('container1');
 
 var map1 = mpp.aMap1;
-var lat0 = 32.0504, lng0 = 118.7965;
-
+var lat0 = 24.1764, lng0 = 120.626;
 
 
 // 00. Set Elements & Controls
@@ -69,3 +68,4 @@ function openHawkEye(e)
 
 
 }
+
